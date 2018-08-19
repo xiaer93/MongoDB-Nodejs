@@ -1,0 +1,18 @@
+<div>
+    <!--上传图片-->
+    <form action="/images" method="post" enctype="multipart/form-data">
+        <input type="file" name="file">
+        <input type="text" placeholder="请输入图片标题">
+        <textarea placeholder="请输入图片描述"></textarea>
+        <button type="submit">提交</button>
+    </form>
+
+    <!--所有图片-->
+    <div>
+        {{#each images}}
+            <a href="/images/{{ uniqueId }}">
+                <img src="/public/upload/{{filename}}" alt="{{title}}" />
+            </a>
+        {{/each}}
+    </div>
+</div>

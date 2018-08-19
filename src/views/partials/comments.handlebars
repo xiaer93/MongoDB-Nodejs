@@ -1,0 +1,18 @@
+<!--评论-->
+<div>
+    {{#each sidebar.comments}}
+        <p>
+            <a class="pull-left" href="/images/{{image.uniqueId }}">
+                <img class="media-object"  src="/public/upload/{{ image.filename }}">
+            </a>
+            <div class="media-body">
+                {{comment}}<br/>
+                <strong class="media-heading">
+                    {{name}}</strong>
+                <small class="text-muted">
+                    {{timeago timestamp }}
+                </small>
+            </div>
+        </p>
+    {{/each}}
+</div>

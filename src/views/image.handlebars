@@ -1,0 +1,25 @@
+<!--图片详情页-->
+<div>
+    <h2>{{image.title}}</h2>
+    <p>{{image.description}}</p>
+    <img src="/public/upload/{{image.filename}}" alt="">
+
+    <div>
+        <button id="like" data-id="{{image.uniqueId}}"><i>Like</i></button>
+        <p id="like-count">喜欢数量：{{image.likes}}</p>
+        <p>查看数量：{{image.views}}</p>
+        <p>时间戳： {{timeago image.timestamp}}</p>
+    </div>
+    <form action="/images/{{image.uniqueId}}/comment" method="post">
+        <input type="text" placeholder="请输入姓名" name="name">
+        <textarea placeholder="请输入评论" name="comment"></textarea>
+        <button>提交</button>
+    </form>
+
+    <div>
+        {{#each comments}}
+            <p>{{comment}}</p>
+            <p>{{name}}---{{timeago timestamp}}</p>
+        {{/each}}
+    </div>
+</div>

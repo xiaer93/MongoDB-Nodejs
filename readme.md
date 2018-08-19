@@ -1,23 +1,38 @@
-node×îÅ£±ÆµÄÌØĞÔ£ºÊÂ¼şÇı¶¯ºÍÒì²½ÊÂ¼ş~Ö§³ÖÆğ´ó²¢·¢ÇëÇó~~~
+nodeæœ€ç‰›é€¼çš„ç‰¹æ€§ï¼šäº‹ä»¶é©±åŠ¨å’Œå¼‚æ­¥äº‹ä»¶æ”¯æŒèµ·å¤§å¹¶å‘è¯·æ±‚
 
-jsonµÄÌØĞÔ£º
-- jsonÊÇ´¿ÎÄ±¾£¬ËùÓĞ×Ö·û´®±ØĞëË«ÒıºÅÀ¨Æğ
+jsonçš„ç‰¹æ€§ï¼š
 
-CRUD²Ù×÷£ºcreate/read/update/delete
+jsonæ˜¯çº¯æ–‡æœ¬ï¼Œæ‰€æœ‰å­—ç¬¦ä¸²å¿…é¡»åŒå¼•å·æ‹¬èµ·
+CRUDæ“ä½œï¼šcreate/read/update/delete
 
-use database
-db.dropDatabase
+use database db.dropDatabase
 
-db.collection.drop()
-db.collection.insert()
-db.collection.find()
-db.collection.update()
-db.collection.remove()
+db.collection.drop() db.collection.insert() db.collection.find() db.collection.update() db.collection.remove()
 
-$set
-$unset
-$lt
-$gt
-$regex
+$set $unset $lt $gt $regex
 
-ÔÄ¶ÁÖÁ£¬77Ò³
+expressé‡è¦çš„æ˜¯ä¸­é—´ä»¶æ¨¡å—
+
+mongooseæ˜¯ä¸€ä¸ªå¾ˆæœ‰ç”¨çš„mongodbè¿æ¥å·¥å…·ï¼Œæä¾›schemas/æ•°æ®éªŒè¯/æ–¹æ³•/è™šæ‹Ÿå±æ€§ç­‰åŠŸèƒ½
+
+restæ˜¯ä¸€ç§å¾ˆå¥½çš„httpè¿›è¡ŒCRUDçš„æ–¹å¼
+â€¢ GET: This retrieves data
+â€¢ POST: This submits data for a new record
+â€¢ PUT: This submits data to update an existing record
+â€¢ PATCH: This submits a date to update only specific parts of an existing record
+â€¢ DELETE: This deletes a specific record
+
+httpå‡ ç§æ–¹å¼çš„åŒºåˆ«ï¼Ÿ
+
+é˜…è¯»è‡³ï¼Œ77é¡µ
+
+
+<div>
+    {{> stats this}}
+</div>
+<div>
+    {{> popular this}}
+</div>
+<div>
+    {{> comments this}}
+</div>
